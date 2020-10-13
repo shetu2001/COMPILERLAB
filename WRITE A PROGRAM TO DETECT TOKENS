@@ -1,0 +1,16 @@
+def tokens():
+    code=input("Enter the code")
+    s=code.split(" ")
+    keywords=["for","while","if","else","float","int","and","break","continue","char","or","elif","long"]
+    operators=["+","-","*","/","%","++","--","=","<=",">=","!=",">","<"]
+    seperators=[",",";"]
+    for i in s:
+        if(i in keywords):
+            print(i,"is a keyword")
+        elif(i in operators):
+            print(i,"is an operators")
+        elif(i in seperators):
+            print(i,"is a seperator")
+        else:
+            print(i,"is an identifier")
+tokens()
